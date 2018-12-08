@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="858.0" prefWidth="1328.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barcharttest.FXMLDocumentController">
+   <children>
+      <BarChart fx:id="chart" animated="false" barGap="0.0" blendMode="SRC_ATOP" categoryGap="0.0" horizontalGridLinesVisible="false" layoutX="14.0" layoutY="14.0" legendVisible="false" prefHeight="618.0" prefWidth="1294.0" stylesheets="@chartCSS.css" verticalGridLinesVisible="false" AnchorPane.bottomAnchor="226.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="14.0">
+         <xAxis>
+            <CategoryAxis opacity="0.0" side="BOTTOM" tickLabelGap="0.0" tickLabelsVisible="false" tickMarkVisible="false" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis minorTickVisible="false" opacity="0.0" side="LEFT" tickLabelsVisible="false" tickMarkVisible="false" />
+         </yAxis>
+      </BarChart>
+      <ComboBox fx:id="comboBox2" layoutX="167.0" layoutY="758.0" onAction="#handleComboBoxAction" prefHeight="52.0" prefWidth="403.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="167.0" />
+      <Label layoutX="29.0" layoutY="764.0" prefHeight="40.0" prefWidth="130.0" text="Array Type:" textFill="WHITE" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="29.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBox" layoutX="167.0" layoutY="672.0" prefHeight="52.0" prefWidth="403.0" AnchorPane.bottomAnchor="134.0" AnchorPane.leftAnchor="167.0" />
+      <Label layoutX="29.0" layoutY="672.0" prefHeight="52.0" prefWidth="130.0" text="Algorithm:" textFill="WHITE" AnchorPane.bottomAnchor="134.0" AnchorPane.leftAnchor="29.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Slider fx:id="slider" blockIncrement="200.0" layoutX="718.0" layoutY="678.0" majorTickUnit="50.0" max="1000.0" minorTickCount="0" prefHeight="40.0" prefWidth="289.0" snapToTicks="true" AnchorPane.bottomAnchor="140.0" AnchorPane.rightAnchor="321.0" />
+      <Label layoutX="610.0" layoutY="672.0" prefHeight="52.0" prefWidth="108.0" text="Delay:" textFill="WHITE" AnchorPane.bottomAnchor="134.0" AnchorPane.rightAnchor="610.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField" layoutX="1050.0" layoutY="672.0" prefHeight="52.0" prefWidth="92.0" AnchorPane.bottomAnchor="134.0" AnchorPane.rightAnchor="186.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="button" layoutX="1192.0" layoutY="754.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="101.0" text="Run" AnchorPane.bottomAnchor="44.0" AnchorPane.rightAnchor="35.0" />
+      <Button fx:id="button2" layoutX="1192.0" layoutY="668.0" mnemonicParsing="false" onAction="#handleGenerateAction" prefHeight="60.0" prefWidth="101.0" text="Generate" AnchorPane.bottomAnchor="130.0" AnchorPane.rightAnchor="35.0" />
+   </children>
+</AnchorPane>
